@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on March 9th, 2026
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+  \textbf{\Huge \scshape Phu Loc} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+  \href{https://github.com/miduhito}{\underline{github.com/miduhito}} $  $
+  \faIcon{map-marker-alt}
+  Vietnam $  $
+    \faIcon{envelope}
+  \href{mailto:phuloc530@gmail.com}
+  {\underline{phuloc530@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Sai Gon University}{Present}
+      {B.S. in Information Technology}{Ho Chi Minh City, Vietnam}
+
+    \vspace{-10pt}
+
+    \subsection{Coursework}
+      \textbf{Focus Areas:} Full-stack development, responsive web interfaces, REST API integration, and clean software design \\
+      \textbf{Interests:} Open-source contribution, modern frontend architecture, and user-centered product development
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C/C++, Python, Java, JavaScript/TypeScript, HTML/CSS, \LaTeX} \\
+     
+    \textbf{Frameworks \& Platforms}{: React, Spring Boot, Android, REST APIs} \\
+
+    \textbf{Tools}{: Git/GitHub, VS Code, IntelliJ IDEA, Database systems}
+     
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Tour Booking Platform} $|$ \footnotesize\emph{Java, Spring Boot, React, REST API, GitHub}}{2025}
+        \resumeItemListStart
+            \resumeItem{Built a full-stack tour booking platform with a RESTful backend and modern frontend interface}
+            \resumeItem{Implemented booking flow and management features for improved user experience}
+            \resumeItem{Collaborated through GitHub workflows and modular service design}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{DailySelfie} $|$ \footnotesize\emph{Java, Android, Mobile UI}}{2024}
+        \resumeItemListStart
+            \resumeItem{Developed an Android mobile app that reminds users to take daily selfies}
+            \resumeItem{Designed smart notification flow and organized photo gallery interactions}
+            \resumeItem{Focused on consistent UX and maintainable project structure}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+        {\textbf{Vehicle Routing Optimizer} $|$ \footnotesize\emph{Python, Optimization, HTML/CSS}}{2024}
+        \resumeItemListStart
+            \resumeItem{Created a Python-based solver for Vehicle Routing Problem with Time Windows (VRPTW)}
+            \resumeItem{Modeled delivery constraints and route planning to improve scheduling efficiency}
+            \resumeItem{Built a lightweight interface layer for input and output visualization}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- HOBBIES --------------------
+\section{Hobbies}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Online Gaming}\vspace{8pt}}{Leisure}
+          {\small{Enjoying strategic and cooperative games that improve teamwork and quick decision-making.}}
+
+          \resumeProjectHeading
+          {\textbf{Fish Keeping}\vspace{8pt}}{Personal Interest}
+          {\small{Maintaining home aquariums with a focus on consistency, patience, and attention to detail.}}
+
+          \vspace{3pt}
+          {\small{These hobbies help me stay creative, disciplined, and balanced outside of coding.}}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
